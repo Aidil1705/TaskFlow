@@ -22,12 +22,6 @@
         <input type="password" name="password" placeholder="Password" required
                class="w-full border-4 border-black p-3 text-lg">
 
-        <select name="role" required
-                class="w-full border-4 border-black p-3 text-lg bg-white">
-            <option value="anggota">Anggota</option>
-            <option value="admin">Admin</option>
-        </select>
-
         <button type="submit"
                 class="w-full bg-lime-300 border-4 border-black p-3 font-black text-lg shadow-[4px_4px_0px_#000] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition">
             DAFTAR

@@ -11,7 +11,6 @@ $user = mysqli_fetch_assoc($query);
 if ($user && password_verify($password, $user['password'])) {
     $_SESSION['id_user'] = $user['id_user'];
     $_SESSION['nama'] = $user['nama'];
-    $_SESSION['role'] = $user['role'];
 
     header("Location: dashboard.php");
 } else {
