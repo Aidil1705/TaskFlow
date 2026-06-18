@@ -22,13 +22,14 @@ $selesai = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS total FROM
 </head>
 <body class="bg-orange-200 min-h-screen font-sans">
 
-<nav class="bg-red-400 border-b-4 border-black px-8 py-4 flex justify-between items-center">
+<nav class="bg-yellow-300 border-b-4 border-black px-8 py-4 flex justify-between">
     <h1 class="text-2xl font-black">TaskFlow</h1>
 
     <div class="flex gap-5 font-bold">
         <a href="dashboard.php" class="underline">Dashboard</a>
         <a href="tugas.php">Tugas</a>
         <a href="tambah_tugas.php">Tambah Tugas</a>
+        <a href="anggota.php">Anggota</a>
         <a href="logout.php">Logout</a>
     </div>
 </nav>
