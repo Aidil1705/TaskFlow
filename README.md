@@ -7,6 +7,7 @@ Aplikasi manajemen tugas sederhana berbasis PHP + MySQL dengan tampilan modern m
 TaskFlow membantu tim kecil mencatat, memantau, dan memperbarui status pekerjaan dalam satu dashboard sederhana.
 
 Fitur utama yang saat ini tersedia:
+
 - Login pengguna
 - Registrasi pengguna
 - Dashboard ringkasan jumlah tugas berdasarkan status
@@ -48,6 +49,7 @@ TaskFlow/
 ## Arsitektur Singkat
 
 Aplikasi mengikuti pola sederhana:
+
 - Halaman UI (GET): menampilkan form/tabel/detail
 - Halaman proses (POST): memproses data lalu redirect
 - Koneksi DB terpusat di `config/connection.php`
@@ -185,6 +187,7 @@ ON DUPLICATE KEY UPDATE username = username;
 ## Endpoint Mapping
 
 ### Halaman (GET)
+
 - `/index.php` - login
 - `/register.php` - registrasi
 - `/dashboard.php` - ringkasan tugas
@@ -194,6 +197,7 @@ ON DUPLICATE KEY UPDATE username = username;
 - `/logout.php` - logout
 
 ### Proses (POST)
+
 - `/proses_login.php`
 - `/proses_register.php`
 - `/proses_edit_tugas.php`
@@ -209,6 +213,7 @@ Dari kode saat ini, ada beberapa referensi file yang belum ada di repository:
 - Aksi hapus mengarah ke `hapus_tugas.php`, tetapi file tersebut belum ada.
 
 Ada juga duplikasi proses registrasi:
+
 - `proses_register.php`
 - `registrasi.php`
 
@@ -250,6 +255,7 @@ Implementasi saat ini masih rentan dan sebaiknya ditingkatkan sebelum dipakai pr
 ## Contoh Akun Uji
 
 Jika seed admin dipakai:
+
 - Username: `admin`
 - Password: `admin123`
 
